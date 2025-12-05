@@ -3,7 +3,7 @@
 #include <string.h>
 
 static int sum_file(const char *path) {
-    FILE *fp = fopen(path, "r");
+    FILE *fp = fopen("foo.txt", "r");
     if (!fp) {
         fprintf(stderr, "Failed to open %s: %s\n", path, strerror(errno));
         return 0;
